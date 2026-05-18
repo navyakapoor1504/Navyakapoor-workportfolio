@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Anton", sans-serif;
+  --font-hand: "Caveat", cursive;
+  
+  --color-brand-red: #A61D15;
+  --color-brand-paper: #F4F1EA;
+  --color-brand-dark: #121212;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F4F1EA] text-[#121212] font-sans selection:bg-brand-red selection:text-white;
+  }
+}
+
+@layer components {
+  .title-condensed {
+    @apply font-display tracking-tight uppercase;
+  }
+  
+  .handwritten {
+    @apply font-hand;
+  }
+
+  .paper-grain {
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  }
+}
