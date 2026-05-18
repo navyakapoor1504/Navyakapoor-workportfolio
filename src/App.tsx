@@ -282,8 +282,9 @@ export default function App() {
               <div className="mt-auto pt-10 border-t border-white/10 relative">
                 <motion.div
                   whileHover={{ scale: 1.05, rotate: 2 }}
-                  className="bg-brand-red py-12 rounded-sm text-center shadow-xl cursor-default"
+                  className="bg-brand-red p-8 rounded-sm text-center shadow-xl cursor-default"
                 >
+                  <span className="handwritten text-4xl font-bold leading-none text-white whitespace-nowrap overflow-hidden italic">Creative Thinking & Design</span>
                 </motion.div>
               </div>
             </div>
